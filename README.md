@@ -1,6 +1,6 @@
-# Tooth Planet- Dental Care
+# Travel Taker - Tour Planer
 
-## [Live Link]() of the website
+## [Live Link](https://travel-taker-baa7d.web.app/) of the website
 
 ## Features
 
