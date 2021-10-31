@@ -12,7 +12,7 @@ const Packeges = () => {
   }, []);
 
   return (
-    <div id="packages" className="mt-16">
+    <div id="packages" className="lg:mt-48">
       <h2 className="text-4xl max-auto font-bold my-5">
         All Our Exciting Packages
       </h2>

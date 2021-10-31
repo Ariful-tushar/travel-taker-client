@@ -54,7 +54,7 @@ const Booking = () => {
           </h4>
         </div>
       </div>
-      <div className="border lg:py-32">
+      <div className="border mt-52 lg:mt-0 lg:py-32">
         <h2 className="w-1/2 mx-auto text-red-500 font-bold text-2xl text-left mb-4">
           Please Enter Your Details:
         </h2>

@@ -50,7 +50,7 @@ const Login = () => {
             </div>
             <button
               onClick={handleGoogleSignIn}
-              className="w-1/2 uppercase h-12 mt-3 text-white rounded bg-red-800 hover:bg-red-900 text-xl"
+              className="lg:w-1/2 uppercase p-2 h-12 mt-3 text-white rounded bg-red-800 hover:bg-red-900 text-xl"
             >
               {googleIcon} Google
             </button>
