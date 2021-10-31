@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const MyOrder = ({ order }) => {
   // const [orders, setOrders] = useState()
@@ -25,7 +25,7 @@ const MyOrder = ({ order }) => {
   };
   return (
     <div className="w-3/4 mx-auto">
-      <div className="border rounded-lg p-2 text-left lg:w-3/4 mx-auto my-5 text-start">
+      <div className="border-4 rounded-lg p-2 text-left lg:w-3/4 mx-auto my-5 text-start">
         <h2>
           <span className="font-bold">Package Name:</span> {name}
         </h2>

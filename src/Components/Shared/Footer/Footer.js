@@ -6,6 +6,7 @@ import {
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import {
+  faCopyright,
   faEnvelope,
   faMapMarkerAlt,
   faPhone,
@@ -28,22 +29,26 @@ const Footer = () => {
   const twitterIcon = (
     <FontAwesomeIcon icon={faTwitterSquare}></FontAwesomeIcon>
   );
+  const copyRightIcon = <FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon>;
   return (
-    <div className="tt-footer-container bg-green-100 w-100 p-8">
-      <h2 className="text-2xl font-bold">Explore The World With Us</h2>
+    <div className="text-gray-300 tt-footer-container w-100 p-8">
+      <h2 className="text-4xl font-bold">Explore The World With Us!</h2>
+      <p className="text-sm my-4">
+        2021 Copyright {copyRightIcon} Ariful Tushar All rights resrved by
+      </p>
       <div className="grid lg:grid-cols-2 mt-12 mt-4">
         <div className="m-2 text-justify w-1/2 mx-auto">
           <div>{locationIcon} 32 winstons road, Paris, France</div>
           <div>{emailIcon} traveltreker@gmail.com</div>
           <div>{phoneIcon} 01872320494</div>
         </div>
-        <div className="w-1/2 mx-auto mt-4">
+        <div className="w-1/2 mx-auto">
           <p>
             A refreshed tour can increase your productivity. So dont think
             second time. Give yourself some refreshed moments. Leave the planing
             to us and just enjoy the nature
           </p>
-          <h4 className="text-xl">Find Us On</h4>
+          <h4 className="text-xl font-bold">Find Us On</h4>
           <div className="text-2xl">
             <span className="mx-2">{facebookIcon}</span>
             <span className="mx-2">{instaIcon}</span>

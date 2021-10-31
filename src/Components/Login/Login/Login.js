@@ -4,26 +4,32 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useHistory, useLocation } from "react-router";
 import useAuth from "../../../Hooks/useAuth";
+import LoadingSpiner from "../../LoadingSpiner/LoadingSpiner";
 
 const Login = () => {
-  const { user, signInUsingGoogle, isLoading } = useAuth();
+  const { user, signInUsingGoogle, isLoading, setIsLoading } = useAuth();
   const location = useLocation();
   const history = useHistory();
   const redirectUrl = location.state?.from || "/home";
   const handleGoogleSignIn = () => {
-    signInUsingGoogle().then((res) => {
-      history.push(redirectUrl);
-    });
+    signInUsingGoogle()
+      .then((res) => {
+        history.push(redirectUrl);
+      })
+      .catch((error) => {
+        history.push("/loginerror");
+        setIsLoading(false);
+      });
   };
   const successIcon = <FontAwesomeIcon icon={faCheckCircle}></FontAwesomeIcon>;
   const googleIcon = <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon>;
 
   if (isLoading) {
     return (
-      <button className="bg-red-600" disabled>
-        <svg class="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24"></svg>
-        Processing
-      </button>
+      <>
+        <h2 className="mt-5 text-2xl font-bold">Please wait while Login</h2>
+        <LoadingSpiner></LoadingSpiner>
+      </>
     );
   }
 

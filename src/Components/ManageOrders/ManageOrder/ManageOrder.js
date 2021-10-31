@@ -28,7 +28,7 @@ const ManageOrder = ({ order }) => {
       .then((data) => {
         console.log(data);
         if (data.deletedCount > 0) {
-          alert("Order cancelled");
+          alert("Order Deleted!");
         }
       });
   };
@@ -41,7 +41,7 @@ const ManageOrder = ({ order }) => {
 
   return (
     <div className="w-3/4 mx-auto">
-      <div className="border rounded-lg p-2 text-left lg:w-3/4 mx-auto my-5 text-start">
+      <div className="border-4 rounded-lg p-2 text-left lg:w-3/4 mx-auto my-5 text-start">
         <h2>
           <span className="font-bold">Customer Name:</span> {firstName}{" "}
           {lastName}

@@ -1,8 +1,23 @@
 .tt-baner {
-  padding: 5em;
+  padding: 3em;
   height: 50em;
-  background-image: url("https://i.ibb.co/GnbPN0Z/cora-leach-YFs2f-ACDMR8-unsplash.jpg");
+  /* background-image: url("bg-video.mp4"); */
+  /* background-image: url("https://i.ibb.co/QvQrQDB/fff.jpg"); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   opacity: 1;
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover; /* combined with 'absolute', works like background-size, but for DOM elements */
+}
+
+.tt-baner-color {
+  color: rgb(19, 38, 48);
 }

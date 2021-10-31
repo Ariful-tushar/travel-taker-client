@@ -61,7 +61,7 @@ const Booking = () => {
         <form className="" onSubmit={handleSubmit(onSubmit)}>
           <div>
             <input
-              className="my-5 bg-gray-100 w-1/2 p-5"
+              className="my-5 bg-gray-200 rounded-lg w-1/2 p-5"
               type="email"
               placeholder="Email"
               value={user.email}
@@ -70,7 +70,7 @@ const Booking = () => {
           </div>
           <div>
             <input
-              className="my-5 bg-gray-100 w-1/2 p-5"
+              className="my-5 bg-gray-100 bg-gray-200 rounded-lg w-1/2 p-5"
               type="text"
               placeholder="First Name"
               {...register("firstName")}
@@ -78,7 +78,7 @@ const Booking = () => {
           </div>
           <div>
             <input
-              className="my-5 bg-gray-100 w-1/2 p-5"
+              className="my-5 bg-gray-100 bg-gray-200 rounded-lg w-1/2 p-5"
               type="text"
               placeholder="Last Name"
               {...register("lastName")}
@@ -87,7 +87,7 @@ const Booking = () => {
 
           <div>
             <input
-              className="my-5 bg-gray-100 w-1/2 p-5"
+              className="my-5 bg-gray-100 bg-gray-200 rounded-lg w-1/2 p-5"
               placeholder="Mobile"
               type="number"
               {...register("phone")}

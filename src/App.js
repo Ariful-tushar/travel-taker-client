@@ -11,6 +11,7 @@ import Booking from "./Components/Booking/Booking";
 import MyOrders from "./Components/MyOrders/MyOrders/MyOrders";
 import ManageOrders from "./Components/ManageOrders/ManageOrders/ManageOrders";
 import AddPackages from "./Components/AddPackages/AddPackages";
+import Error from "./Components/Login/Error/Error";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/loginerror">
+              <Error></Error>
             </Route>
             <PrivateRoute path="/booking/:packageId">
               <Booking></Booking>
